@@ -1,0 +1,366 @@
+package it.pokèmon.basics.Moves.fuoco;
+
+import it.pokèmon.basics.LevelRange;
+import it.pokèmon.basics.Move;
+import it.pokèmon.basics.Pokèmon;
+import it.pokèmon.basics.Type;
+
+public class Braciere extends Move{
+	private LevelRange levelRange = new LevelRange();
+	private int levelRange_atk;
+	private int levelRange_enemy;
+	private int pp = 25;
+
+	public Braciere() {
+		super("Braciere", Type.FUOCO, 40, 100);
+	}
+	
+	public void enemyDamage(Pokèmon p, Pokèmon p2) {
+		this.levelRange_atk = levelRange.getRange(p);
+		this.levelRange_enemy = levelRange.getRange(p2);
+		this.pp = this.pp - 1;
+		
+		switch(this.levelRange_atk) {
+			case 1:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*15));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*8));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*4));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*2));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - 1);
+						break;
+				}
+				break;
+			case 2:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*15));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*8));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*4));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*2));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - 1);
+						break;
+				}
+				break;
+			case 3:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*30));
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*15));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*8));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*4));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*2));
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - 1);
+						break;
+				}
+				break;
+			case 4:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*35));
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*30));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*15));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*8));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*4));
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*2));
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - 1);
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - 1);
+						break;
+				}
+				break;
+			case 5:
+				switch(this.levelRange_enemy)	{
+					case 1:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*40));
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*35));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*30));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*15));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*8));
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*4));
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*2));
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - 1);
+						break;
+				}
+				break;
+			case 6:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*60));
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*50));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*40));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*35));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*30));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*15));
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*8));
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*5));
+						break;
+				}
+				break;
+			case 7:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*75));
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*60));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*50));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*40));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*35));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*30));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*15));
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*8));
+						break;
+				}
+				break;
+			case 8:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*90));
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*75));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*60));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*50));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*40));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*45));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*30));
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*17));
+						break;
+				}
+				break;
+			case 9:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(0);
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*85));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*75));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*60));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*50));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*45));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*40));
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*35));
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*30));
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+				}
+				break;
+			case 10:
+				switch(this.levelRange_enemy) {
+					case 1:
+						p2.setHP(0);
+						break;
+					case 2:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*95));
+						break;
+					case 3:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*85));
+						break;
+					case 4:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*70));
+						break;
+					case 5:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*60));
+						break;
+					case 6:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*40));
+						break;
+					case 7:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*35));
+						break;
+					case 8:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*30));
+						break;
+					case 9:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*25));
+						break;
+					case 10:
+						p2.setHP(p2.getHP() - ((p2.getHP()/100)*20));
+						break;
+				}
+				break;
+		}
+	}
+}

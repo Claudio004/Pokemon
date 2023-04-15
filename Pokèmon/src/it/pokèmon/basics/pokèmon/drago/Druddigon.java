@@ -10,7 +10,7 @@ import it.pokèmon.basics.Moves.lotta.Vendetta;
 
 public class Druddigon extends Pokèmon{
 	Druddigon(){
-		super("Emolga", Type.DRAGO, 120, 90, 60, 90, 48, 77, 4, 30, 173);
+		super("Druddigon", Type.DRAGO, 120, 90, 60, 90, 48, 77, 4, 30, 173);
 		setMoves(new Sgranocchio());
 		setMoves(new Dragartigli());
 		setMoves(new Vendetta());

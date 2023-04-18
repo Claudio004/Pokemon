@@ -6,7 +6,6 @@ import it.pokèmon.basics.abilities.HiddenAbilities;
 
 public abstract class Pokèmon {
 	private String nome;
-	private boolean hasDoubleType;
 	private Type type1;
 	private Type type2;
 	private int Attacco;
@@ -106,11 +105,11 @@ public abstract class Pokèmon {
 	}
 
 	public boolean isHasDoubleType() {
-		return this.hasDoubleType;
-	}
-
-	public void setHasDoubleType(boolean hasDoubleType) {
-		this.hasDoubleType = hasDoubleType;
+		boolean hasDoubleType = false;
+		if((this.type1 != null) && (this.type2 != null)) {
+			hasDoubleType = true;
+		}
+		return hasDoubleType;
 	}
 
 	public Type getType1() {

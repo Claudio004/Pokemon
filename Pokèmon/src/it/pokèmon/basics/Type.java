@@ -1,0 +1,21 @@
+package it.pokèmon.basics;
+
+public enum Type {
+	FUOCO,
+	ACQUA,
+	ERBA,
+	COLEOTTERO,
+	VELENO,
+	ELETTRO,
+	ROCCIA,
+	TERRA,
+	LOTTA,
+	VOLANTE,
+	NORMALE,
+	BUIO,
+	PSICO,
+	SPETTRO,
+	DRAGO,
+	GHIACCIO,
+	ACCIAIO;
+}

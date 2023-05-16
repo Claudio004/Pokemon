@@ -865,13 +865,13 @@ public class Game implements GameInterface{
 				p2 = new Zebstrika(Abilities.PARAFULMINE);
 				break;
 			case "30":
-				p = new Roggenrola(Abilities.VIGORE);
+				p2 = new Roggenrola(Abilities.VIGORE);
 				break;
 			case "31":
-				p = new Boldore(Abilities.VIGORE);
+				p2 = new Boldore(Abilities.VIGORE);
 				break;
 			case "32":
-				p = new Gigalith(Abilities.VIGORE);
+				p2 = new Gigalith(Abilities.VIGORE);
 				break;
 			case "37":
 				p2 = new Audino(Abilities.CURACUORE);

@@ -4,69 +4,69 @@
 
 Added new Pokèmon:
  - **Normal Type:**
-  - **Lillipup**;
-  - **Herdier**;
-  - **Stoutland**;
-  - **Pidove**;
-  - **Tranquill**;
-  - **Unfezant**;
-  - **Meloetta**;
+   - **Lillipup**;
+   - **Herdier**;
+   - **Stoutland**;
+   - **Pidove**;
+   - **Tranquill**;
+   - **Unfezant**;
+   - **Meloetta**;
   
  - **Psico Type:**
-  - **Munna**;
-  - **Musharna**;
+   - **Munna**;
+   - **Musharna**;
   
  - **Electric Type:**
-  - **Blitzle**;
-  - **Zebstrika**;
-  - **Thundurus**;
+   - **Blitzle**;
+   - **Zebstrika**;
+   - **Thundurus**;
   
  - **Bug Type:**
-  - **Genesect**;
-  - **Larvesta**;
-  - **Volcarona**;
+   - **Genesect**;
+   - **Larvesta**;
+   - **Volcarona**;
   
  - **Aqua Type:**
-  - **Keldeo**;
+   - **Keldeo**;
   
  - **Dragon Type:**
-  - **Kyurem**;
+   - **Kyurem**;
   
  - **Grass Type:**
-  - **Maractus**;
+   - **Maractus**;
   
  - **Ground Type:**
-  - **Landorus**;
+   - **Landorus**;
   
 Added new Moves:
  - **Psico Type:**
-  - **Psicoraggio**;
+   - **Psicoraggio**;
   
  - **Fire Type:**
-  - **Ondacalda**;
+   - **Ondacalda**;
  
  - **Flying Type:**
-  - **Raffica**;
+   - **Raffica**;
   
  - **Electric Type:**
-  - **Falcecannone**;
-  - **Scarica**;
+   - **Falcecannone**;
+   - **Scarica**;
   
  - **Steel Type:**
-  - **Ferrartigli**;
-  - **Cannonflash**;
+   - **Ferrartigli**;
+   - **Cannonflash**;
   
  - **Normal Type:**
-  - **Echeggiavoce**;
+   - **Echeggiavoce**;
   
  - **Fighting Type:**
-  - **Spadamistica**;
+   - **Spadamistica**;
   
  - **Ice Type:**
-  - **Gelamondo**;
+   - **Gelamondo**;
   
  - **Rock Type:**
-  - **Rocciotomba**;
+   - **Rocciotomba**;
   
  - **Bug Type:**
-  - **Ventargenteo**;
+   - **Ventargenteo**;

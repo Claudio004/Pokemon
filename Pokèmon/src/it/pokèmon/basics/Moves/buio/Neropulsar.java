@@ -1,6 +1,5 @@
 package it.pokèmon.basics.Moves.buio;
 
-import it.pokèmon.basics.Alerts;
 import it.pokèmon.basics.Move;
 import it.pokèmon.basics.Pokèmon;
 import it.pokèmon.basics.Type;
@@ -20,7 +19,7 @@ import it.pokèmon.basics.Vulnerability;
  * @see it.pokèmon.basics.Move
  * @see it.pokèmon.basics.Type
  * @see it.pokèmon.basics.Vulnerability
- * @see it.pokèmon.basics.Alert
+ * @see it.pokèmon.basics.Moves.buio.DarkDamage
  */
 public class Neropulsar extends Move{
 	private int pp = 15;
@@ -46,22 +45,6 @@ public class Neropulsar extends Move{
 		}else{
 			vul = new Vulnerability(p2.getType1(), Type.BUIO);
 		}
-		
-		if(vul.damageMultiplier() == 0.5) {
-			p2.setHP(p2.getHP() - (((((2*p.getLevel())/5) +2) * this.getPotenza() * (p.getAttaccoSp() / p2.getDifesaSp())) / 50 +2) / 2);
-			Alerts.non_molto_efficace();
-		}else {
-			if(vul.damageMultiplier() == 0.25) {
-				Alerts.non_molto_efficace();
-				p2.setHP(p2.getHP() - (((((2*p.getLevel())/5) +2) * this.getPotenza() * (p.getAttaccoSp() / p2.getDifesaSp())) / 50 +2) / 4);
-			}else {
-				if(vul.damageMultiplier() == 0.0) {
-					Alerts.invulnerabile();
-				}else {
-					Alerts.superEfficace();
-					p2.setHP(p2.getHP() - (((((2*p.getLevel())/5) +2) * this.getPotenza() * (p.getAttaccoSp() / p2.getDifesaSp())) / 50 +2) * (int)vul.damageMultiplier());
-				}
-			}
-		}
+		new DarkDamage(p, p2, vul, this.getPotenza()).damage();
 	}
 }

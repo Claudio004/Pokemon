@@ -42,4 +42,20 @@ public class Alerts extends JOptionPane{
 	public static void win() {
 		showMessageDialog(null, "Hai vinto!!", "Pokèmon", JOptionPane.INFORMATION_MESSAGE);
 	}
+	
+	public static void Assorbacqua() {
+		showMessageDialog(null, "Il pokèmon avversario possiede l'abilità Assorbacqua.", "Pokèmon", JOptionPane.INFORMATION_MESSAGE);
+	}
+	
+	public static void Levitazione() {
+		showMessageDialog(null, "Il pokèmon avversario possiede l'abilità Levitazione.", "Pokèmon", JOptionPane.INFORMATION_MESSAGE);
+	}
+	
+	public static void Fuocardore() {
+		showMessageDialog(null, "Il pokèmon avversario possiede l'abilità Fuocardore.", "Pokèmon", JOptionPane.INFORMATION_MESSAGE);
+	}
+	
+	public static void Assorbivolt() {
+		showMessageDialog(null, "Il pokèmon avversario possiede l'abilità Assorbivolt.", "Pokèmon", JOptionPane.INFORMATION_MESSAGE);
+	}
 }

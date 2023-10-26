@@ -25,6 +25,7 @@ public abstract class Pokèmon {
 	private int DifesaSp;
 	private int Velocità;
 	private int HP;
+	private int MaxHP;
 	private int movesNumber;
 	private int Level;
 	private int exp;
@@ -60,6 +61,7 @@ public abstract class Pokèmon {
 		this.DifesaSp = DifesaSp;
 		this.Velocità = Velocità;
 		this.HP = HP;
+		this.setMaxHP(this.HP);
 		this.movesNumber = movesNumber;
 		this.Level = Level;
 		this.exp = exp;
@@ -93,6 +95,7 @@ public abstract class Pokèmon {
 		this.DifesaSp = DifesaSp;
 		this.Velocità = Velocità;
 		this.HP = HP;
+		this.setMaxHP(this.HP);
 		this.movesNumber = movesNumber;
 		this.Level = Level;
 		this.exp = exp;
@@ -128,6 +131,7 @@ public abstract class Pokèmon {
 		this.DifesaSp = DifesaSp;
 		this.Velocità = Velocità;
 		this.HP = HP;
+		this.setMaxHP(this.HP);
 		this.movesNumber = movesNumber;
 		this.Level = Level;
 		this.exp = exp;
@@ -163,6 +167,7 @@ public abstract class Pokèmon {
 		this.DifesaSp = DifesaSp;
 		this.Velocità = Velocità;
 		this.HP = HP;
+		this.setMaxHP(this.HP);
 		this.movesNumber = movesNumber;
 		this.Level = Level;
 		this.exp = exp;
@@ -443,5 +448,21 @@ public abstract class Pokèmon {
 			}
 		}
 		return info;
+	}
+
+	/**
+	 * Returns the Pokèmon's MaxHealth Points
+	 * @return MaxHP : int
+	 */
+	public int getMaxHP() {
+		return MaxHP;
+	}
+
+	/**
+	 * Sets the Pokèmon's MaxHealth Points
+	 * @param maxHP : int
+	 */
+	public void setMaxHP(int maxHP) {
+		this.MaxHP = maxHP;
 	}
 }

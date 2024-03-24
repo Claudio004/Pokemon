@@ -2,7 +2,7 @@
 
 **Added new Damage Classes to reduce code lines for the damage calculation**
 
-**Added abilities funcionalities to:**
+**Added abilities functions to:**
  - **Erbaiuto;**
  - **Acquaiuto;**
  - **Aiutofuoco;**
